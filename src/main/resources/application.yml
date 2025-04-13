@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: integrahub
+  datasource:
+    url: jdbc:h2:mem:integrahub
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+
+hubspot:
+  client-id: SEU_CLIENT_ID
+  client-secret: SEU_CLIENT_SECRET
+  redirect-uri: http://localhost:8080/api/v1/oauth/hubspot/callback
+  scopes: oauth crm.objects.contacts.read crm.objects.contacts.write
