@@ -94,7 +94,7 @@ ngrok http 8080
 4. **Recebimento de Webhook (simulação):**  
    A HubSpot enviará um `POST` automático para:
    ```
-   POST /api/v1/hubspot/webhook
+   POST /api/v1/contact/webhook/contact-created
    ```
    Será exibido no console da aplicação um log informando que um novo contato foi criado.
 
