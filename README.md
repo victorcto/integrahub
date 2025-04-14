@@ -81,7 +81,7 @@ ngrok http 8080
 
 3. **Criação de contato:**
    ```http
-   POST http://localhost:8080/api/v1/hubspot/contact
+   POST http://localhost:8080/api/v1/contact
    Content-Type: application/json
 
    {
